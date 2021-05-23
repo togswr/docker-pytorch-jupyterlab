@@ -11,5 +11,5 @@ RUN pip install torch-scatter -f https://pytorch-geometric.com/whl/torch-${TORCH
     pip install torch-spline-conv -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html && \
     pip install torch-geometric
 
-COPY requirements/requirements.txt .
-RUN pip install -r requirements.txt
+COPY requirements/ /requirements
+RUN pip install -r /requirements/requirements.txt

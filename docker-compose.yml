@@ -11,4 +11,5 @@ services:
     #   - JUPYTER_ENABLE_LAB=yes
     volumes:
       - ./work:/workspace
+      - ./requirements:/requirements
     command: jupyter-lab --ip=0.0.0.0 --allow-root --NotebookApp.token=''
